@@ -14,8 +14,10 @@ namespace ResizeDuplicantManagementScreens
         public override void OnLoad(Harmony harmony)
         {
             harmony.PatchAll();
-            PUtil.InitLibrary(true);
-            new POptions().RegisterOptions(this, typeof(Config));
+            PUtil.InitLibrary(false);
+            var options = new POptions();
+            options.RegisterOptions(this, typeof(Config));
+
         }
     }
 }

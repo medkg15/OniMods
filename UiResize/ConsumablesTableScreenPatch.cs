@@ -17,7 +17,7 @@ namespace ResizeDuplicantManagementScreens
         {
             public static void Postfix(ConsumablesTableScreen __instance)
             {
-                var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>();
+                var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>() ?? new Config();
 
                 var transform = __instance.FindComponent<RectTransform>();
 

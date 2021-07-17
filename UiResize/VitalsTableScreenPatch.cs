@@ -16,7 +16,7 @@ namespace ResizeDuplicantManagementScreens
         {
             public static void Postfix(VitalsTableScreen __instance)
             {
-                var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>();
+                var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>() ?? new Config();
 
                 var transform = __instance.FindComponent<RectTransform>();
                 transform.sizeDelta = new Vector2(transform.rect.width, transform.rect.height + config.HeightAdjustment);
