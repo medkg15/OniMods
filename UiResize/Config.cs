@@ -3,14 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PeterHan.PLib;
+using PeterHan.PLib.Options;
 
-namespace UiResize
+namespace ResizeDuplicantManagementScreens
 {
     [JsonObject(MemberSerialization.OptIn)]
     public class Config
     {
-        [Option("Height Adjustment", "Extra height to be added to UI elements.")]
+        [Option("Height Adjustment", "Additional pixel height for Duplicant Management Screens.")]
         [JsonProperty]
         public int HeightAdjustment { get; set; }
 

@@ -1,30 +1,34 @@
-# About
+Tired of scrolling through dozens of dups in the tiny Priorities screen?  Now you can resize the duplicant management screens to handle more dups!
 
-Mod for Oxygen Not Included which adjusts the UI to show more information on one screen.  The following elements are adjusted:
+![Configurable Screen Height](doc/example.png)
+
+This mod provides a configurable height adjustment for the following screens via the Mod Options menu:
 
 - Vitals
 - Consumables
 - Schedule
 - Priorities
 
-Height adjustment is configurable via the Mod Options menu.
-
 ![Options](doc/options.png)
 
-This mod uses Peter Han's library https://github.com/peterhaneve/ONIMods/tree/master/PLib
+Thanks to Peter Han for the excellent PLib library, which provides the configuration UI: https://github.com/peterhaneve/ONIMods/tree/master/PLib
 
-![Vitals](doc/vitals.png)
+# Spaced Out DLC?
 
-![Priorities](doc/priorities.png)
+I don't have the Spaced Out DLC and do not know if this mod is compatible.  You can test it by updating `mod_info.yaml` with:
+
+```
+supportedContent: ALL
+```
+
 
 # Known Issues
 
-- Mispositioned settings icon on Priorities screen.
-- Incorrect outline on Consumables screen.
+- Incorrect outline placement on Consumables screen.
 
-# Building
+# Development & Build
 
-Create "lib" directory at the repository root and copy the following assemblies from \OxygenNotIncluded\OxygenNotIncluded_Data\Managed:
+Create a "lib" directory at the repository root and copy the following assemblies from your ONI install: \OxygenNotIncluded\OxygenNotIncluded_Data\Managed\:
 
 - 0Harmony.dll
 - Assembly-CSharp-firstpass.dll
@@ -34,8 +38,12 @@ Create "lib" directory at the repository root and copy the following assemblies 
 - UnityEngine.CoreModule.dll
 - UnityEngine.dll
 - UnityEngine.ImageConversionModule.dll
+- UnityEngine.InputLegacyModule.dll
 - UnityEngine.TextRenderingModule.dll
 - UnityEngine.UI.dll
 - UnityEngine.UIModule.dll
+- UnityEngine.UnityWebRequestModule.dll
 
-A post-build action deploys the UiResize.dll (merged with PLib) to the Mods\Dev directory.
+"Build" the solution to deploy the Mod to your Mods\Dev directory.
+
+A post-build action deploys the mod .dll (ILMerged with PLib) and .yaml files.

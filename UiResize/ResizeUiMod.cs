@@ -1,24 +1,21 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using PeterHan;
-using PeterHan.PLib;
 using PeterHan.PLib.Options;
+using PeterHan.PLib.Core;
 
-namespace UiResize
+namespace ResizeDuplicantManagementScreens
 {
-    public class ResizeUiMod
+    public class ResizeUiMod : KMod.UserMod2
     {
         public const int HeightChange = 0;
 
-        public static class Mod_OnLoad
+        public override void OnLoad(Harmony harmony)
         {
-            public static void OnLoad()
-            {
-                PUtil.InitLibrary(true);
-                POptions.RegisterOptions(typeof(Config));
-            }
+            harmony.PatchAll();
+            PUtil.InitLibrary(true);
+            new POptions().RegisterOptions(this, typeof(Config));
         }
     }
 }

@@ -1,12 +1,14 @@
-﻿using Harmony;
+﻿using HarmonyLib;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using PeterHan.PLib.Core;
 
-namespace UiResize
+namespace ResizeDuplicantManagementScreens
 {
     public class JobsTableScreenPatch
     {
