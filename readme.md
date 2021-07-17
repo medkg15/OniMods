@@ -1,6 +1,6 @@
 Tired of scrolling through dozens of dups in the tiny Priorities screen?  Now you can resize the duplicant management screens to handle more dups!
 
-![Configurable Screen Height](doc/example.png)
+![Configurable Screen Height](doc/Example.png)
 
 This mod provides a configurable height adjustment for the following screens via the Mod Options menu:
 
