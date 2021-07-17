@@ -106,6 +106,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(ILMergeConsolePath)" /ndebug /out:$(TargetName)Merged.dll $(TargetName).dll PLib.dll  /targetplatform:v4,C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+mkdir C:\Users\%25USERNAME%25\Documents\Klei\OxygenNotIncluded\mods\Dev\ResizeDuplicantManagementScreens
 copy $(TargetDir)ResizeDuplicantManagementScreensMerged.dll C:\Users\%25USERNAME%25\Documents\Klei\OxygenNotIncluded\mods\Dev\ResizeDuplicantManagementScreens\ResizeDuplicantManagementScreens.dll /y
 copy $(TargetDir)*.yaml C:\Users\%25USERNAME%25\Documents\Klei\OxygenNotIncluded\mods\Dev\ResizeDuplicantManagementScreens\ /y</PostBuildEvent>
   </PropertyGroup>
