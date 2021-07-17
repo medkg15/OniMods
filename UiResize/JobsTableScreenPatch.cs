@@ -24,6 +24,11 @@ namespace UiResize
                 var scroll = __instance.GetComponentInChildren<KScrollRect>();
                 var layout = scroll.GetComponentInParent<LayoutElement>();
                 layout.preferredHeight += config.HeightAdjustment;
+
+                var options = __instance.GetComponentsInChildren<LayoutElement>()
+                    .First(e => e.name == "OptionsButton");
+
+                options.GetComponent<RectTransform>().localPosition = new Vector3(-15, -50, 0);
             }
         }
     }
