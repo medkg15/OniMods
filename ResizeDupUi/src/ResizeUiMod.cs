@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using PeterHan.PLib.Options;
 using PeterHan.PLib.Core;
 
-namespace ResizeDuplicantManagementScreens
+namespace ResizeDupUi
 {
-    public class ResizeUiMod : KMod.UserMod2
+    public class ResizeDupsUiMod : KMod.UserMod2
     {
         public const int HeightChange = 0;
 

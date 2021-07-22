@@ -1,30 +1,7 @@
-Tired of scrolling through dozens of dups in the tiny Priorities screen?  Now you can resize the duplicant management screens to handle more dups!
+This repository contains the following Oxygen Not Included mods:
 
-![Configurable Screen Height](doc/Example.png)
-
-This mod provides a configurable height adjustment for the following screens via the Mod Options menu:
-
-- Vitals
-- Consumables
-- Schedule
-- Priorities
-
-![Options](doc/options.png)
-
-Thanks to Peter Han for the excellent PLib library, which provides the configuration UI: https://github.com/peterhaneve/ONIMods/tree/master/PLib
-
-# Spaced Out DLC?
-
-I don't have the Spaced Out DLC and do not know if this mod is compatible.  You can test it by updating `mod_info.yaml` with:
-
-```
-supportedContent: ALL
-```
-
-
-# Known Issues
-
-- Incorrect outline placement on Consumables screen.
+- [Resize Dup UI](https://steamcommunity.com/sharedfiles/filedetails/?id=2549295369)
+- [Taller Mods Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=2553830824)
 
 # Development & Build
 

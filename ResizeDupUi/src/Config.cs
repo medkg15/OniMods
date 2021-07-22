@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using PeterHan.PLib.Options;
 
-namespace ResizeDuplicantManagementScreens
+namespace ResizeDupUi
 {
     [JsonObject(MemberSerialization.OptIn)]
     public class Config

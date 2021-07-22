@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,19 +7,20 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ResizeDuplicantManagementScreens
+namespace ResizeDupUi
 {
-    public class ScheduleScreenPatch
+    public class ConsumablesTableScreenPatch
     {
-        [HarmonyPatch(typeof(ScheduleScreen))]
-        [HarmonyPatch("OnSpawn")]
-        public static class ScheduleScreenOnSpawn
+        [HarmonyPatch(typeof(ConsumablesTableScreen))]
+        [HarmonyPatch("OnActivate")]
+        public static class ConsumablesTableScreenOnActivate
         {
-            public static void Postfix(ScheduleScreen __instance)
+            public static void Postfix(ConsumablesTableScreen __instance)
             {
                 var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>() ?? new Config();
 
                 var transform = __instance.FindComponent<RectTransform>();
+
                 transform.sizeDelta = new Vector2(transform.rect.width, transform.rect.height + config.HeightAdjustment);
 
                 var scroll = __instance.GetComponentInChildren<KScrollRect>();

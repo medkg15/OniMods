@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResizeDuplicantManagementScreens", "UiResize\ResizeDuplicantManagementScreens.csproj", "{7B57B666-C8EA-45B6-B8E0-9A5D8AB9C4EA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2844EF5-42FD-4502-89FE-2DCC063199FD}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResizeDupUi", "ResizeDupUi\src\ResizeDupUi.csproj", "{7B57B666-C8EA-45B6-B8E0-9A5D8AB9C4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerModsMenu", "TallerModsMenu\src\TallerModsMenu\TallerModsMenu.csproj", "{C6B373EF-4D13-4ACE-BD95-52672081696D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{7B57B666-C8EA-45B6-B8E0-9A5D8AB9C4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B57B666-C8EA-45B6-B8E0-9A5D8AB9C4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B57B666-C8EA-45B6-B8E0-9A5D8AB9C4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B373EF-4D13-4ACE-BD95-52672081696D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B373EF-4D13-4ACE-BD95-52672081696D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B373EF-4D13-4ACE-BD95-52672081696D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B373EF-4D13-4ACE-BD95-52672081696D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

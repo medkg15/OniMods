@@ -1,20 +1,22 @@
 ﻿using HarmonyLib;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using PeterHan.PLib.Core;
 
-namespace ResizeDuplicantManagementScreens
+namespace ResizeDupUi
 {
-    public class VitalsTableScreenPatch
+    public class JobsTableScreenPatch
     {
-        [HarmonyPatch(typeof(VitalsTableScreen))]
+        [HarmonyPatch(typeof(JobsTableScreen))]
         [HarmonyPatch("OnActivate")]
-        public static class VitalsTableScreenOnActivate
+        public static class JobsTableScreenOnActivate
         {
-            public static void Postfix(VitalsTableScreen __instance)
+            public static void Postfix(JobsTableScreen __instance)
             {
                 var config = PeterHan.PLib.Options.POptions.ReadSettings<Config>() ?? new Config();
 
@@ -24,6 +26,11 @@ namespace ResizeDuplicantManagementScreens
                 var scroll = __instance.GetComponentInChildren<KScrollRect>();
                 var layout = scroll.GetComponentInParent<LayoutElement>();
                 layout.preferredHeight += config.HeightAdjustment;
+
+                var options = __instance.GetComponentsInChildren<LayoutElement>()
+                    .First(e => e.name == "OptionsButton");
+
+                options.GetComponent<RectTransform>().localPosition = new Vector3(-15, -50, 0);
             }
         }
     }
