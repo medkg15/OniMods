@@ -2,6 +2,7 @@ This repository contains the following Oxygen Not Included mods:
 
 - [Resize Dup UI](https://steamcommunity.com/sharedfiles/filedetails/?id=2549295369)
 - [Taller Mods Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=2553830824)
+- [Mute Starving Notification](https://steamcommunity.com/sharedfiles/filedetails/?id=2705745399)
 
 # Development & Build
 
