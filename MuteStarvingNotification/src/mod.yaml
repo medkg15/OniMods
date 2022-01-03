@@ -1,0 +1,3 @@
+title: Mute Starving Notification
+description: "Removes the starving notification sound.  Useful on Ravenous difficulty, where notifications are too frequent."
+staticID: MuteStarvingNotification
