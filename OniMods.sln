@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerModsMenu", "TallerMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuteStarvingNotification", "MuteStarvingNotification\src\MuteStarvingNotification.csproj", "{CCEC7B1F-F20E-42FB-BC37-2D4185234C8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebalance", "Rebalance\src\Rebalance.csproj", "{962A5BD2-C5C7-452D-9710-1FD75744F3CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{CCEC7B1F-F20E-42FB-BC37-2D4185234C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCEC7B1F-F20E-42FB-BC37-2D4185234C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCEC7B1F-F20E-42FB-BC37-2D4185234C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962A5BD2-C5C7-452D-9710-1FD75744F3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962A5BD2-C5C7-452D-9710-1FD75744F3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962A5BD2-C5C7-452D-9710-1FD75744F3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962A5BD2-C5C7-452D-9710-1FD75744F3CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
